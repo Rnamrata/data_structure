@@ -1,9 +1,7 @@
 class Node:
-    def __int__(self, data):
+    def __init__(self, data=None):
         self.node = data
         self.next = None
-
-        return self
 
     def return_next(self):
         return self.next
@@ -17,13 +15,13 @@ class LinkedList:
         listValue = self.head
         print("Printing data:")
 
-        while (listValue):
-            print(listValue.nodeValue)
+        while (listValue.next != None):
+            print(listValue.node)
             listValue = listValue.next
 
 
 def check_confirmation(confirmation):
-    confirmation == input("do you want to continue? (y/n): ")
+    confirmation = input("do you want to continue? (y/n): ")
 
     if confirmation == 'y' or confirmation == 'Y':
         return True
@@ -39,7 +37,7 @@ if __name__ == "__main__":
 
     while condition:
         value = input('Input the value: ')
-        list.head = Node.__int__(list.head, value)
+        list.head = Node(value)
 
         if i == 0:
             list.head.next = list.head
@@ -48,4 +46,6 @@ if __name__ == "__main__":
 
         i += 1
         condition = check_confirmation(confirmation)
+
+    list.print_list()
 
