@@ -17,6 +17,7 @@ class LinkedList:
 
         while (listValue.next != None):
             print(listValue.node)
+            print(listValue.next)
             listValue = listValue.next
 
 
@@ -42,7 +43,7 @@ if __name__ == "__main__":
         if i == 0:
             list.head.next = list.head
         else:
-            list.head.next = Node.return_next()
+            list.head.next = Node(value)
 
         i += 1
         condition = check_confirmation(confirmation)
