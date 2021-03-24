@@ -1,20 +1,23 @@
-class LinkedList:
+class Node:
     def __init__(self, data=None):
         self.node = data
         self.next = None
+
+
+class LinkedList:
+    def __init__(self):
         self.head = None
 
     def append_to_list(self, data):
         if self.head is None:
-            self.head = LinkedList(data)
+            self.head = Node(data)
+
         else:
             search_value = self.head
 
             while search_value.next is not None:
                 search_value = search_value.next
-
-            search_value.next = LinkedList(data)
-            # print(search_value.next)
+            search_value.next = Node(data)
 
     def print_list(self):
         list_value = self.head
