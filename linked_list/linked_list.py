@@ -1,27 +1,32 @@
-class Node:
+class LinkedList:
     def __init__(self, data=None):
         self.node = data
         self.next = None
-
-    def return_next(self):
-        return self.next
-
-
-class LinkedList:
-    def __init__(self):
         self.head = None
 
+    def append_to_list(self, data):
+        if self.head is None:
+            self.head = LinkedList(data)
+        else:
+            search_value = self.head
+
+            while search_value.next is not None:
+                search_value = search_value.next
+
+            search_value.next = LinkedList(data)
+            # print(search_value.next)
+
     def print_list(self):
-        listValue = self.head
+        list_value = self.head
         print("Printing data:")
 
-        while (listValue.next != None):
-            print(listValue.node)
-            print(listValue.next)
-            listValue = listValue.next
+        while list_value.next is not None:
+            print(list_value.node)
+            # print(list_value.next)
+            list_value = list_value.next
 
 
-def check_confirmation(confirmation):
+def check_confirmation():
     confirmation = input("do you want to continue? (y/n): ")
 
     if confirmation == 'y' or confirmation == 'Y':
@@ -31,22 +36,13 @@ def check_confirmation(confirmation):
 
 
 if __name__ == "__main__":
-    list = LinkedList()
-    i = 0
-    confirmation = ''
+    linked_list = LinkedList()
     condition = True
 
     while condition:
         value = input('Input the value: ')
-        list.head = Node(value)
+        linked_list.append_to_list(value)
+        condition = check_confirmation()
 
-        if i == 0:
-            list.head.next = list.head
-        else:
-            list.head.next = Node(value)
-
-        i += 1
-        condition = check_confirmation(confirmation)
-
-    list.print_list()
+    linked_list.print_list()
 
