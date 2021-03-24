@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8357e477-a8de-4c1e-92d0-14e13171d721" name="Default Changelist" comment="">
+    <list default="true" id="8357e477-a8de-4c1e-92d0-14e13171d721" name="Default Changelist" comment="creating 2 different classes">
+      <change afterPath="$PROJECT_DIR$/linked_list/linked_list_as_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linked_list/linked_list_by_position.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/linked_list_as_queue.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linked_list/linked_list.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linked_list/linked_list_as_queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="247">
+              <caret line="19" column="42" selection-start-line="15" selection-start-column="12" selection-end-line="19" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linked_list/linked_list_as_stack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="41" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linked_list/linked_list_by_position.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -38,10 +58,12 @@
     <findStrings>
       <find>find_self</find>
       <find>listValue</find>
+      <find>append_to_list</find>
     </findStrings>
     <replaceStrings>
       <replace>searchValue</replace>
       <replace>list_value</replace>
+      <replace>add_to_list</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -51,6 +73,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/linked_list/linked_list.py" />
+        <option value="$PROJECT_DIR$/linked_list/linked_list_as_stack.py" />
+        <option value="$PROJECT_DIR$/linked_list/linked_list_by_position.py" />
       </list>
     </option>
   </component>
@@ -58,6 +82,9 @@
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -86,6 +113,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -100,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.linked_list_by_position">
     <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Data_Structure" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,7 +141,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list/linked_list.py" />
+      <option name="SCRIPT_NAME" value="E:\Study Materials\Namrata\Practice\Python\Data_Structure\linked_list\linked_list_as_queue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linked_list_as_stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Data_Structure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linked_list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list/linked_list_as_stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linked_list_by_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Data_Structure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linked_list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list/linked_list_by_position.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,6 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.linked_list_by_position" />
+        <item itemvalue="Python.linked_list_as_stack" />
         <item itemvalue="Python.linked_list" />
       </list>
     </recent_temporary>
@@ -160,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616555870445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="creating 2 different classes">
+      <created>1616570866898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616570866898</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -192,7 +271,8 @@
     <MESSAGE value="pointing to next head" />
     <MESSAGE value="initializing and creating list under single class" />
     <MESSAGE value="push to origin" />
-    <option name="LAST_COMMIT_MESSAGE" value="push to origin" />
+    <MESSAGE value="creating 2 different classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating 2 different classes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
@@ -209,10 +289,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list/linked_list.py">
+    <entry file="file://$PROJECT_DIR$/linked_list/linked_list_as_queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="247">
+          <caret line="19" column="42" selection-start-line="15" selection-start-column="12" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list/linked_list_as_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list/linked_list_by_position.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>

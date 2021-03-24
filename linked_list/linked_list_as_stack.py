@@ -8,22 +8,20 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append_to_list(self, data):
+    def add_to_first_list(self, data):
         if self.head is None:
             self.head = Node(data)
 
         else:
             search_value = self.head
-
-            while search_value.next is not None:
-                search_value = search_value.next
-            search_value.next = Node(data)
+            self.head = Node(data)
+            self.head.next = search_value
 
     def print_list(self):
         list_value = self.head
         print("Printing data:")
 
-        while list_value.next is not None:
+        while list_value is not None:
             print(list_value.node)
             # print(list_value.next)
             list_value = list_value.next
@@ -44,7 +42,7 @@ if __name__ == "__main__":
 
     while condition:
         value = input('Input the value: ')
-        linked_list.append_to_list(value)
+        linked_list.add_to_first_list(value)
         condition = check_confirmation()
 
     linked_list.print_list()
